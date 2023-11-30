@@ -18,7 +18,7 @@ public class plaenarprotokolleActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_plaenarprotokolle);
+        setContentView(R.layout.activity_plenarprotokolle);
         listView = (ListView) findViewById(R.id.customListView);
         CustomBaseAdapter customBaseAdapter = new CustomBaseAdapter(getApplicationContext(),plaenarprotokolle,AdlerImages );
         listView.setAdapter(customBaseAdapter);

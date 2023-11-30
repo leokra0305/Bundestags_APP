@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Bundestags_APP"
         tools:targetApi="31">
         <activity
+            android:name=".drei"
+            android:exported="false" />
+        <activity
+            android:name=".Personen"
+            android:exported="false" />
+        <activity
             android:name=".CustomListView"
             android:exported="false" />
         <activity

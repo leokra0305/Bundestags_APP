@@ -27,89 +27,72 @@
 
         />
 
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="343dp"
         android:layout_height="67dp"
-        android:text="Wilkommen in der Bundestags App! Was möchstest du dir anschauen?"
+        android:text="Willkommen in der Bundestags App! Was möchstest du dir anschauen?"
         android:textColor="@color/fontgrey"
         android:textSize="21sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20sp"
-        android:layout_marginRight="20sp"
-        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5">
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.055" />
 
 
-        <Button
-            android:id="@+id/btn_plaenarprotokolle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/secondarycolourgray1"
-            android:fontFamily="sans-serif"
-            android:foregroundTint="#2196F3"
-            android:padding="9dp"
-            android:text="Plänarprotokolle"
-            android:textColor="@color/white"
-            android:textSize="23sp"
-            android:textStyle="bold"
-            app:iconTint="#2196F3"
-            app:iconTintMode="add"
-            android:onClick="main_btn"
-            />
+    <Button
+        android:id="@+id/button_plenarprotokolle"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="72dp"
+        android:text="Plenarprotokolle"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
-        <Button
-            android:id="@+id/btn_abgeordnete"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#969696"
-            android:fontFamily="sans-serif"
-            android:padding="9dp"
-            android:text="Abgeordnete"
-            android:textColor="@color/white"
-            android:textSize="23sp"
-            android:textStyle="bold"
-            android:onClick="main_btn"/>
+    <Button
+        android:id="@+id/button_personen"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:text="Personen"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button_drei"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_plenarprotokolle"
+        app:layout_constraintVertical_bias="0.527" />
 
-        <Button
-            android:id="@+id/btn_platzhalter"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#969696"
-            android:fontFamily="sans-serif"
-            android:includeFontPadding="true"
-            android:padding="9dp"
-            android:text="Platzhalter"
-            android:textColor="@color/white"
-            android:textSize="23sp"
-            android:textStyle="bold"
-            android:onClick="main_btn"
-            />
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/button_drei"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="212dp"
+        android:backgroundTint="@color/white"
+        android:text="drei"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="115dp"
-        android:layout_height="119dp"
+        android:id="@+id/imageView"
+        android:layout_width="112dp"
+        android:layout_height="110dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:srcCompat="@mipmap/adler" />
+        app:layout_constraintTop_toBottomOf="@+id/button_drei"
+        app:srcCompat="@drawable/adler" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

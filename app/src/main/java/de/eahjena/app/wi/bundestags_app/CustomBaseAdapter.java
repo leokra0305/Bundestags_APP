@@ -48,6 +48,6 @@ public class CustomBaseAdapter extends BaseAdapter {
         return convertView;
         // Erstellt für jede Zeile die Bild Text Ansicht und geht dann wieder zur Liste
 
-        return null;
+        //return null;
     }
 }
